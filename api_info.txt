@@ -1,0 +1,6 @@
+otreeba api key: 24ff7cd7eba85626f833c8747125515fd9f9956a
+otreeba documentation: https://api.otreeba.com/swagger/
+
+
+google custom search api key: AIzaSyAS5VD_9dAl1m8fwUB1szZ1DKHRjQUufck 
+google custom search: https://developers.google.com/custom-search/docs/overview

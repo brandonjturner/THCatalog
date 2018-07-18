@@ -1,84 +1,89 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <title>Marijuana Buddy</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <style>
-table#strain-table tr td:last-child,
-table#strain-table tr th:last-child {
-    text-align: right;
-}
-table#strain-table tr td:last-child img{
-    width: 200px;
-    height: 200px;
-}
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="jumbotron" style="background-color: black; color: white">
-      <h1 class="text-center">Strain Information</h1>
-      <h3 class="text-center">A Comprehensive Directory of Marijuana Strains</h3>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card mb-4 p-4">
-          <div class="card-body">
-            <h3 class="card-title">Add Strain</h3>
-            <form>
-                    <div class="form-group row">
-                            <label for="strain-name-input">Strain</label>
-                            <input class="form-control" id="strain-name-input" placeholder="Type in strain name here..." type="text">
-                          </div>
-                          <button class="btn btn-primary float-right" id="add-strain-btn">Submit</button>
-            </form>
-          </div>
-        </div>
+<html lang="en-us">
+    <head>
+      <meta charset="UTF-8">
+      <title>Marijuana Buddy</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <style>
+        #employee-table th, td {
+          display: inline-block;
+          width: 16.575%;
+        }
+        table#strain-table tr td:last-child,
+        table#strain-table tr th:last-child {
+          text-align: right;
+        }
+        table#strain-table tr td:last-child img{
+          width: 200px;
+          height: 200px;
+        }
+      </style>
+    </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron" style="background-color: black; color: white">
+        <h1 class="text-center">Strain Information</h1>
+        <h3 class="text-center">A Comprehensive Directory of Marijuana Strains</h3>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h3 class="card-title">Searched Strains</h3>
-            <table class="table table-sm table-hover" id='strain-table'>
-              <thead>
-                <tr>
-                  <th scope="col">Strain Name</th>
-                  <th scope="col">Genetics</th>
-                  <th scope="col">Picture</th>
-                </tr>
-              </thead>
-              <tbody>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-<div class="row">
-          <div class="col-md-12">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h3 class="card-title">Find some!</h3>
-                <table class="table table-sm table-hover" id='google-map'>
-                  <thead>
-                      <div id="map">
-                      </div>
-                  </thead>
-                  <tbody>
-                  </tbody>
-                </table>
-              </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-4 p-4">
+            <div class="card-body">
+              <h3 class="card-title">Add Strain</h3>
+              <form>
+                      <div class="form-group row">
+                              <label for="strain-name-input">Strain</label>
+                              <input class="form-control" id="strain-name-input" placeholder="Type in strain name here..." type="text">
+                            </div>
+                            <button class="btn btn-primary float-right" id="add-strain-btn">Submit</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h3 class="card-title">Searched Strains</h3>
+              <table class="table table-sm table-hover" id='strain-table'>
+                <thead>
+                  <tr>
+                    <th scope="col">Strain Name</th>
+                    <th scope="col">Genetics</th>
+                    <th scope="col">Picture</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
-  <script src="assets/javascript/app.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH4J0KkoYoqyFJE4bI5LDTbax7m-OuUfo&libraries=places&callback=initMap" async defer></script>
-</body>
-</html>
+  <div class="row">
+            <div class="col-md-12">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h3 class="card-title">Find some!</h3>
+                  <table class="table table-sm table-hover" id='google-map'>
+                    <thead>
+                        <div id="map">
+                        </div>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH4J0KkoYoqyFJE4bI5LDTbax7m-OuUfo&libraries=places&callback=initMap" async defer>
+    </script>
+  </body>
+  </html>

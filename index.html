@@ -9,7 +9,6 @@
 table#strain-table tr td:last-child,
 table#strain-table tr th:last-child {
     text-align: right;
-    
 }
 table#strain-table tr td:last-child img{
     width: 300px;
@@ -64,7 +63,7 @@ table#strain-table tr td:last-child img{
             <div class="card mb-4">
               <div class="card-body">
                 <h3 class="card-title">Find some!</h3>
-                <table class="table table-sm table-hover" id='strain-table'>
+                <table class="table table-sm table-hover" id='google-map'>
                   <thead>
                       <div id="map"></div>
                   </thead>
@@ -77,6 +76,7 @@ table#strain-table tr td:last-child img{
         </div>
       </div>
       </div>
-  <script src="app.js"></script>
+  <script src="assets/javascript/app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH4J0KkoYoqyFJE4bI5LDTbax7m-OuUfo&libraries=places&callback=initMap" async defer></script>
 </body>
 </html>

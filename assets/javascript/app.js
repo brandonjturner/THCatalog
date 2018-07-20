@@ -74,7 +74,7 @@ $("#add-strain-btn").on("click", function(event) {
         success: function(data) {
         console.log(data)
         $('#youtube').empty()
-        var ytHeader = $("<h3 class='ytHeader'>").text("Videos")
+        var ytHeader = $("<h3 class='ytHeader'>")
         var ytDivider = $("<div class='divider'>")
         $('#youtube').prepend(ytHeader, ytDivider)
           for (var i = 0; i<data.items.length;i++) {

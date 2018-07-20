@@ -16,10 +16,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
-#employee-table th, td {
-  display: inline-block;
-  width: 16.575%;
-}
 table#strain-table tr td:last-child,
 table#strain-table tr th:last-child {
   text-align: right;

@@ -1,8 +1,133 @@
-  #map {
+#map {
     height: 100%;
-  }
-  html, body {
+}
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
+}
+#employee-table th, td {
+  display: inline-block;
+  width: 16.575%;
+}
+table#strain-table tr td:last-child,
+table#strain-table tr th:last-child {
+  text-align: right;
+}
+table#strain-table tr td:last-child img{
+  width: 200px;
+  height: 200px;
+}
+/* #weed {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: -1;
+}
+#weed img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -1;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: green;
+}
+.jumbotron{
+  background: none;
+}
+.row {
+	background-color: #115512;
+	color: black;
+	font-weight: bold;
+	padding: 10px;
+	radius: 5px;
+  border-radius: 5px; 
+}
+.card-body h3:hover  {
+  color:green;
+}
+.centered h3:hover  {
+  font-size:36px;
+  color:red;
+  font-weight:800;
+}
+#threed {
+  display:block;
+  opacity: 0.5
+}
+#pic  {
+  opacity:0.5
+}
+header {
+  background-color: green;
+}
+#holobuilderIframe  {
+  color: #82b74b;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke: 1px black;
+}
+.container2 {
+  position: relative;
+  text-align: center;
+  color: #82b74b;
+  font-size:44px;
+  font-style: oblique;
+  padding: 30px;
+  font-weight: 900;
+  line-height: 1.6;
+}
+.weed {
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+  font-family: "AlphaSmoke";
+  src: url("assets/font/AlphaSmoke.TFF")
+}
+h1 {
+  padding: 20px 0;
+  font-family: AlphaSmoke;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 150px;
+  color: black;
+  text-align: center;
+  color: #e0dfdc;
+  letter-spacing: .1em;
+  text-shadow: 
+    0 -1px 0 #fff, 
+    0 1px 0 #2e2e2e, 
+    0 2px 0 #2c2c2c, 
+    0 3px 0 #2a2a2a, 
+    0 4px 0 #282828, 
+    0 5px 0 #262626, 
+    0 6px 0 #115512, 
+    0 7px 0 #222, 
+    0 8px 0 #202020, 
+    0 9px 0 #1e1e1e, 
+    0 10px 0 #1c1c1c, 
+    0 11px 0 #1a1a1a, 
+    0 12px 0 #181818, 
+    0 13px 0 #161616, 
+    0 14px 0 #141414, 
+    0 15px 0 #121212, 
+    0 22px 30px rgba(0, 0, 0, 0.9)
+} */

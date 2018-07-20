@@ -67,25 +67,32 @@ $("#add-strain-btn").on("click", function(event) {
     addNewRow(response.data, strainName);
   });
   var ytAPIkey = "AIzaSyBFF-Z0wLlFirA44q-R_Yfg5Y_d59Ks9xY"
-  var preYTurl = "https://www.youtube.com/watch?v="
-  $.ajax({
-     url : "https://www.googleapis.com/youtube/v3/search?part=snippet&topicId=%2Fm%2F05z1_&type=video&key=" + ytAPIkey + "&q=" + strainName + "smoke report",
-     dataType: "jsonp",
-     success: function(data) {
-         console.log(data)
-         for (var i = 0; i<data.items.length;i++) {
-         var youtube = $("<div class='youtube'>")
-         var vidlink = $("<a>")
-         youtube.append(vidlink)
-         vidlink.attr("href", preYTurl + data.items[i].id.videoId)
-         vidlink.attr("target", "_blank")
-         $("#youtube").append(youtube)
-         var vidthumb = $("<img>")
-         vidthumb.attr("src", data.items[i].snippet.thumbnails.medium.url)
-         vidlink.append(vidthumb)
-       }
-     }
- });
+     var preYTurl = "https://www.youtube.com/watch?v="
+     $.ajax({
+        url : "https://www.googleapis.com/youtube/v3/search?part=snippet&topicId=%2Fm%2F05z1_&type=video&key=" + ytAPIkey + "&q=" + strainName + "%20smoke%20report",
+        dataType: "jsonp",
+        success: function(data) {
+        console.log(data)
+        $('#youtube').empty()
+        var ytHeader = $("<h3 class='ytHeader'>").text("Videos")
+        var ytDivider = $("<div class='divider'>")
+        $('#youtube').prepend(ytHeader, ytDivider)
+          for (var i = 0; i<data.items.length;i++) {
+            var vidiv = $("<div class='youtube'>")
+            var vidlink = $("<a>")
+            var vidheader = $("<p class='vidheader'>")
+            vidheader.text(data.items[i].snippet.title)
+            vidlink.prepend(vidheader)
+            vidiv.append(vidlink)
+            vidlink.attr("href", preYTurl + data.items[i].id.videoId)
+            vidlink.attr("target", "_blank")
+            $("#youtube").append(vidiv)
+            var vidthumb = $("<img>")
+            vidthumb.attr("src", data.items[i].snippet.thumbnails.medium.url)
+            vidlink.append(vidthumb)
+          }
+        }
+    });
  function addNewRow (data, strainName) {
   var img = data[0].image;
   var newRow = $("<tr>").prepend(

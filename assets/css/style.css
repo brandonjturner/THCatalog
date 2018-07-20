@@ -29,5 +29,17 @@ table#strain-table tr td:last-child img{
   height: 200px;
 }
 body {
-  background:url(../images/bg.jpg.jpg);  
+  background:url(../images/bg.jpg);  
+}
+#youtube {
+  text-align: center;
+}
+.youtube {
+  text-align: center;
+}
+.ytHeader {
+  text-align: center;
+}
+#ytHeader {
+  text-align: center;
 }

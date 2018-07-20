@@ -9,7 +9,7 @@ var map, infoWindow;
           var service = new google.maps.places.PlacesService(map);
             service.nearbySearch({
             location: losAngeles,
-            radius: 10000,
+            radius: 1000000,
             keyword: 'dispensary'
   }, callback);
 }
